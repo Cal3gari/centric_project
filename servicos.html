@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços | Centric Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { darkblue: '#0A1F44', blue: '#2F80ED', purple: '#7B61FF' }, fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] } } } }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans pt-20">
+
+    <header class="fixed top-0 w-full z-50 bg-darkblue shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
+                    <i data-lucide="hexagon" class="text-blue w-8 h-8"></i>
+                    <span class="font-heading font-bold text-2xl text-white tracking-tight">Centric.</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition font-medium">Home</a>
+                    <a href="sobre.html" class="text-gray-300 hover:text-white transition font-medium">Sobre</a>
+                    <a href="servicos.html" class="text-white hover:text-blue transition font-medium">Serviços</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-white transition font-medium">Blog</a>
+                    <a href="contato.html" class="text-gray-300 hover:text-white transition font-medium">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h1 class="text-4xl font-heading font-bold text-darkblue mb-4">Soluções Completas de TI</h1>
+                <p class="text-lg text-gray-600">Desenvolvemos um ecossistema de serviços projetado para manter seu negócio operando com segurança, velocidade e eficiência de custos.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+                <div class="order-2 md:order-1">
+                    <div class="w-16 h-16 bg-blue/10 rounded-2xl flex items-center justify-center text-blue mb-6">
+                        <i data-lucide="activity" class="w-8 h-8"></i>
+                    </div>
+                    <h2 class="text-3xl font-heading font-bold text-darkblue mb-4">NOC (Network Operations Center)</h2>
+                    <p class="text-gray-600 mb-6">Identificamos e resolvemos problemas antes que seus usuários percebam. Monitoramento em tempo real de servidores, links, banco de dados e aplicações.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2 text-gray-700"><i data-lucide="check-circle" class="text-blue w-5 h-5"></i> Monitoramento 24x7x365</li>
+                        <li class="flex items-center gap-2 text-gray-700"><i data-lucide="check-circle" class="text-blue w-5 h-5"></i> Gestão de Incidentes baseada em ITIL</li>
+                        <li class="flex items-center gap-2 text-gray-700"><i data-lucide="check-circle" class="text-blue w-5 h-5"></i> Dashboards executivos e operacionais</li>
+                    </ul>
+                    <a href="contato.html" class="bg-darkblue hover:bg-blue text-white px-6 py-3 rounded-lg font-semibold transition inline-block">Solicitar Proposta NOC</a>
+                </div>
+                <div class="order-1 md:order-2 bg-gray-100 rounded-2xl h-80 flex items-center justify-center overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="NOC Dashboard" class="object-cover w-full h-full">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+                <div class="bg-gray-100 rounded-2xl h-80 flex items-center justify-center overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff0f?auto=format&fit=crop&w=800&q=80" alt="SOC Security" class="object-cover w-full h-full">
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-purple/10 rounded-2xl flex items-center justify-center text-purple mb-6">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <h2 class="text-3xl font-heading font-bold text-darkblue mb-4">SOC (Security Operations Center)</h2>
+                    <p class="text-gray-600 mb-6">Blindamos sua empresa contra ameaças cibernéticas. Protegemos seus dados e garantimos conformidade regulatória (LGPD).</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-2 text-gray-700"><i data-lucide="check-circle" class="text-purple w-5 h-5"></i> SIEM e Análise de Vulnerabilidades</li>
+                        <li class="flex items-center gap-2 text-gray-700"><i data-lucide="check-circle" class="text-purple w-5 h-5"></i> Resposta rápida a Incidentes e Ransomware</li>
+                        <li class="flex items-center gap-2 text-gray-700"><i data-lucide="check-circle" class="text-purple w-5 h-5"></i> Threat Intelligence (Inteligência de Ameaças)</li>
+                    </ul>
+                    <a href="contato.html" class="bg-darkblue hover:bg-purple text-white px-6 py-3 rounded-lg font-semibold transition inline-block">Solicitar Proposta SOC</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

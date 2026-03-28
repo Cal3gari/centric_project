@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | Centric Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { darkblue: '#0A1F44', blue: '#2F80ED', purple: '#7B61FF' }, fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Poppins', 'sans-serif'] } } } }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans pt-20">
+
+    <header class="fixed top-0 w-full z-50 bg-darkblue shadow-md" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
+                    <i data-lucide="hexagon" class="text-blue w-8 h-8"></i>
+                    <span class="font-heading font-bold text-2xl text-white tracking-tight">Centric.</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white transition font-medium">Home</a>
+                    <a href="sobre.html" class="text-white hover:text-blue transition font-medium">Sobre</a>
+                    <a href="servicos.html" class="text-gray-300 hover:text-white transition font-medium">Serviços</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-white transition font-medium">Blog</a>
+                    <a href="contato.html" class="text-gray-300 hover:text-white transition font-medium">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h1 class="text-4xl font-heading font-bold text-darkblue mb-6">Nossa História</h1>
+                    <p class="text-gray-600 mb-4 text-lg">Fundada por especialistas em infraestrutura crítica, a Centric Solutions nasceu com uma missão clara: democratizar o acesso a operações de TI de nível enterprise.</p>
+                    <p class="text-gray-600 mb-8 text-lg">Entendemos que no mercado atual, downtime e falhas de segurança não são apenas problemas técnicos, são riscos existenciais para qualquer negócio.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue">
+                            <h3 class="font-bold text-xl text-darkblue mb-2">Missão</h3>
+                            <p class="text-gray-600">Garantir a disponibilidade, segurança e escalabilidade tecnológica dos nossos clientes, permitindo que foquem 100% no seu core business.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-purple">
+                            <h3 class="font-bold text-xl text-darkblue mb-2">Visão</h3>
+                            <p class="text-gray-600">Ser a principal referência na América Latina em soluções integradas de NOC, SOC e Cloud Computing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Equipe Centric Solutions" class="rounded-2xl shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
